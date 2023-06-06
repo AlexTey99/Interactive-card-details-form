@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Interactive card details form</title>
+</head>
+
+<body>
+    <img class="img-background" src="./images/bg-main-desktop.png" alt="">
+    <img class="img-movil-background" src="./images/bg-main-mobile.png" alt="">
+    <div class="main-container">
+        <div class="container-centre">
+            <div class="left-container">
+                <div class="left-container-img-top">
+                    <img class="left-top-card-logo" src="./images/card-logo.svg" alt="">
+                    <img class="img-left-top" src="./images/bg-card-front.png" alt="">
+                    <p id="leftNumberTarget" class="left-number-target">0000 0000 0000 0000</p>
+                    <div class="Felicia-Leire-date">
+                        <p id="userNamer" class="left-name-feliciaLeire">User Name</p>
+                        <div class="month-year">
+                            <p id="month" class="left-date">00</p>
+                            <p>/</p>
+                            <p id="year">00</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="left-container-img-bottom">
+                    <img class="img-left-bottom" src="./images/bg-card-back.png" alt="">
+                    <p id="leftParagraphBottom" class="left-paragraph-bottom">000</p>
+                </div>
+
+            </div>
+            <div id="otherContainer" class="other-container">
+                <div class="circle-container">
+                    <img class="circle" src="./images/icon-complete.svg" alt="">
+                    <h1 class="Thank-you">Thank you!</h1>
+                    <br>
+                    <p class="p1">We've added your card details</p>
+                    <button class="buttom">Continue</button>
+                </div>
+            </div>
+            <div id="rightContainer" class="right-container">
+                <p class="names-containers">CARDHOLDER NAME</p>
+                <INput id="inputCardHolder" class="input-double" placeholder="e.g. Jane Appleseed"></INput>
+                <p id="notBlankCardHolder" class="error">Can't be blank</p>
+                <p id="notBlankCard" class="error">Wrong formant, letters only</p>
+                <br>
+                <p class="text-card-number names-containers">CARD NUMBER</p>
+                <INput id="inputCadNumber" class="input-card-number" placeholder="e.g. 1234 5678 9123 0000"
+                    maxlength="19"></INput>
+                <p id="errorCardNumber" class="error">Wrong formant, numbers only</p>
+                <p id="notBlankNumber" class="error">Can't be blank</p>
+                <br>
+                <div class="right-container-expdate-cvc">
+                    <p class="EXP names-containers">EXP.DATE (MM/YY)</p>
+                    <P class="cvc names-containers">CVC</P>
+                </div>
+                <div class="third-input">
+                    <div class="input-MM-container">
+                        <INput id="inputMM" class="input-MM" placeholder="MM" maxlength="2"></INput>
+                        <p id="notBlank1" class="error">Can't be blank</p>
+                        <p id="notBlank00" class="error">Wrong formant, numbers only</p>
+                        <p id="monthIncorrect" class="error">incorrect data</p>
+                    </div>
+                    <div>
+                        <INput id="inputYY" class="input-YY
+                        " placeholder="YY" maxlength="2"></INput>
+                    </div>
+
+                    <div>
+                        <INput id="inputAG123" class="input-ag123" placeholder="e.g.123" maxlength="3"></INput>
+                        <p id="notBlank2" class="error">Can't be blank</p>
+                        <p id="errorAG" class="error">incorrect data</p>
+                    </div>
+
+                </div>
+                <button class="buttom"
+                    onclick="CardHolder(),CardNumber(),MM(),YY(),AG(),validateAllInput()">Confirm</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

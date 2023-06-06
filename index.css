@@ -1,0 +1,441 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.img-background {
+    position: absolute;
+    width: 385px;
+    height: 100vh;
+}
+
+.img-movil-background {
+    display: none;
+}
+
+@media screen and (max-width: 375px) {
+    .img-movil-background {
+        display: flex;
+        position: absolute;
+        width: 100vw;
+        height: 240px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .img-background {
+        display: none;
+    }
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-centre {
+    display: flex;
+    background: white;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 375px) {
+    .container-centre {
+        flex-direction: column;
+    }
+}
+
+.left-container {
+    flex: 1;
+    margin-left: 50px;
+}
+
+@media screen and (max-width: 375px) {
+    .left-container {
+        margin: 0px;
+        margin-top: 72px;
+    }
+}
+
+.left-container-img-top {
+    position: relative;
+    top: -25px;
+}
+
+@media screen and (max-width: 375px) {
+    .left-container-img-top {
+        top: 21px;
+    }
+
+}
+
+.img-left-top {
+    height: 180px;
+    width: 330px;
+    margin-top: 70px;
+    margin-left: 120px;
+}
+
+@media screen and (max-width: 375px) {
+    .img-left-top {
+        margin: 0px;
+        position: absolute;
+        height: 160px;
+        margin-left: 25px;
+        top: -40px;
+        width: 260px;
+        z-index: 1;
+    }
+}
+
+.left-top-card-logo {
+    position: absolute;
+    width: 60px;
+    left: 140px;
+    top: 90px;
+}
+
+@media screen and (max-width: 375px) {
+    .left-top-card-logo {
+        z-index: 2;
+        top: -30px;
+        left: 40px;
+    }
+}
+
+.left-number-target {
+    position: relative;
+    top: -80px;
+    left: 145px;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 3px;
+}
+
+@media screen and (max-width: 375px) {
+    .left-number-target {
+        z-index: 1;
+        top: 45px;
+        width: 235px;
+        font-size: 17px;
+        left: 40px;
+    }
+}
+
+.Felicia-Leire-date {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 220px;
+    left: 145px;
+    width: 270px;
+    font-size: 8px;
+    color: white;
+}
+
+@media screen and (max-width: 375px) {
+    .Felicia-Leire-date {
+        width: 180px;
+        top: 90px;
+        left: 40px;
+        width: 230px;
+        z-index: 1
+    }
+}
+
+.left-name-feliciaLeire {
+    letter-spacing: 1px;
+}
+
+.left-date {
+    letter-spacing: 1px;
+}
+
+.img-left-bottom {
+    position: relative;
+    height: 180px;
+    width: 340px;
+    margin-top: -35px;
+    margin-left: 180px;
+}
+
+
+@media screen and (max-width: 375px) {
+    .img-left-bottom {
+        margin: 0px;
+        top: -145px;
+        width: 260px;
+        height: 160px;
+        margin-left: 85px;
+        box-shadow: 0px 0px 0px 0px;
+    }
+
+}
+
+.left-container-img-bottom {
+    position: relative;
+    top: 15px;
+}
+
+.left-paragraph-bottom {
+    position: relative;
+    color: white;
+    top: -100px;
+    left: 460px;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 375px) {
+    .left-paragraph-bottom {
+        left: 290px;
+        top: -235px;
+        width: 20px;
+    }
+}
+
+.right-container {
+    flex: 1;
+    margin-left: 150px;
+    font-size: 10px;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 375px) {
+    .right-container {
+        position: relative;
+        margin: 0px;
+        margin-left: 12px;
+        top: 10px;
+    }
+}
+
+.right-container-expdate-cvc {
+    display: flex;
+}
+
+.third-input {
+    display: flex;
+}
+
+.input-double {
+    padding: 10px;
+    height: 35px;
+    width: 280px;
+    margin-top: 2px;
+}
+
+@media screen and (max-width: 375px) {
+    .input-double {
+        width: 310px;
+        height: 45px;
+        margin-top: 7px;
+    }
+}
+
+.input-card-number {
+    padding: 10px;
+    height: 35px;
+    width: 280px;
+    margin-top: 2px;
+}
+
+@media screen and (max-width: 375px) {
+    .input-card-number {
+        width: 310px;
+        height: 45px;
+        margin-top: 7px;
+    }
+}
+
+.errorCardNumber {
+    display: none;
+    color: red;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 375px) {
+    .names-containers {
+        font-size: 16px;
+    }
+}
+
+.input-MM {
+    padding: 10px;
+    width: 60px;
+    height: 35px;
+    margin-right: 10px;
+    margin-top: 2px;
+}
+
+@media screen and (max-width: 375px) {
+    .input-MM {
+        width: 70px;
+        height: 45px;
+        margin-top: 7px;
+    }
+}
+
+.input-YY {
+    padding: 10px;
+    height: 35px;
+    width: 50px;
+    margin-right: 15px;
+    margin-top: 2px;
+}
+
+@media screen and (max-width: 375px) {
+    .input-YY {
+        width: 60px;
+        height: 45px;
+        margin-top: 7px;
+    }
+}
+
+.input-ag123 {
+    padding: 10px;
+    margin-top: 2px;
+    height: 35px;
+    width: 147px;
+}
+
+@media screen and (max-width: 375px) {
+    .input-ag123 {
+        width: 155px;
+        height: 45px;
+        margin-top: 7px;
+    }
+}
+
+
+.text-card-number {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 375px) {
+    .text-card-number {
+        margin-top: 20px;
+    }
+}
+
+.EXP {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 375px) {
+    .EXP {
+        margin-top: 21px;
+    }
+}
+
+.cvc {
+    margin-left: 45px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 375px) {
+    .cvc {
+        margin-top: 20px;
+    }
+}
+
+.error {
+    display: none;
+    color: red;
+    margin-top: 5px;
+    font-size: 10px;
+}
+
+@media screen and (max-width: 375px) {
+    .error {
+        font-size: 13px;
+    }
+}
+
+.buttom {
+    margin-top: 20px;
+    color: white;
+    height: 40px;
+    width: 284px;
+    border-radius: 10px;
+    background: hsl(278, 68%, 11%);
+}
+
+@media screen and (max-width: 375px) {
+    .buttom {
+        width: 310px;
+        height: 50px;
+        margin-top: 30px;
+    }
+}
+
+.buttom:hover {
+    cursor: pointer;
+}
+
+.other-container {
+    display: none;
+}
+
+.circle-container {
+    margin-left: 150px;
+}
+
+@media screen and (max-width: 375px) {
+    .circle-container {
+        margin: 0px;
+    }
+}
+
+.circle {
+    width: 50px;
+    margin-bottom: 20px;
+    margin-left: 115px;
+}
+
+@media screen and (max-width: 375px) {
+    .circle {
+        width: 90px;
+        margin-top: 33px;
+    }
+}
+
+.Thank-you {
+    width: 171px;
+    margin-left: 80px;
+    font-size: 22px;
+}
+
+@media screen and (max-width: 375px) {
+    .Thank-you {
+        font-size: 28px;
+    }
+}
+
+.p1 {
+    font-size: 12px;
+    margin-left: 60px;
+    margin-bottom: 15px;
+    color: hsl(279, 6%, 55%);
+}
+
+@media screen and (max-width: 375px) {
+    .p1 {
+        font-size: 15px;
+    }
+}
+
+.month-year {
+    display: flex;
+    gap: 2px;
+}
