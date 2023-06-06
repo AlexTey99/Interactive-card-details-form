@@ -92,6 +92,7 @@ const CardNumber = () => {
     verificateCardNumber = true;
   } else if(/^[0-9\s]+$/.test(resultNumber) && resultNumber != "" && resultNumber.length != 19){
     document.getElementById("notBlankNumber").style.display = "flex"
+    document.getElementById("errorCardNumber").style.display = "none"
     verificateCardNumber = false;
   } else if (isNaN(resultNumber) == true && resultNumber != "") {
     document.getElementById("errorCardNumber").style.display = "flex";
